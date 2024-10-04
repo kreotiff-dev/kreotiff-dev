@@ -17,6 +17,20 @@ header h1 {
     margin: 0;
 }
 
+.contacts {
+    margin-top: 10px;
+    color: #fff;
+}
+
+.contacts a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contacts span {
+    margin-right: 15px;
+}
+
 .container {
     max-width: 800px;
     margin: 20px auto;
