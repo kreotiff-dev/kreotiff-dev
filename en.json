@@ -1,0 +1,107 @@
+{
+    "name": "Evgeniy Sychev",
+    "position": "Senior QA Engineer",
+    "age": 38,
+    "email": "dev.stratus@gmail.com",
+    "phone": "+7-926-839-76-48",
+    "location": "Russia, Moscow",
+    "about": "Hello! I am a QA Engineer with over 10 years of experience in testing web and mobile applications. I have extensive knowledge of manual testing, API testing, and quality assurance process management. I am eager to grow in the field of automated testing.",
+    "skills": [
+      { "name": "Postman", "level": 90 },
+      { "name": "Mobile Testing", "level": 70 },
+      { "name": "Integration", "level": 80 },
+      { "name": "Charles Proxy", "level": 60 },
+      { "name": "JavaScript", "level": 15 },
+      { "name": "Selenium", "level": 15 }
+    ],
+    "experience": [
+      { 
+        "date": "June 2024 - Present", 
+        "company": "Inteli Sale", 
+        "position": "Senior QA Engineer", 
+        "description": [
+          "Performed manual testing of REST API services, ensuring high system quality;",
+          "Created and automated requests in Postman for 3 APIs with over 70 endpoints, which accelerated testing and reduced error rates;",
+          "Used JavaScript scripts in Postman to automate checks and increase test efficiency;",
+          "Identified defects using DevTools, Kibana, and server log analysis via command line, facilitating quick problem resolution;",
+          "Conducted end-to-end testing of critical business processes, including interactions with external integrations;",
+          "Worked actively with Charles Proxy and Postman's mock server to substitute data and test various integration scenarios."
+        ]
+      },
+      { 
+        "date": "May 2022 - Present", 
+        "company": "Evgeniy Sychev, Sole Proprietorship", 
+        "position": "Testing Mentor", 
+        "description": [
+          "Developed and led an author’s course on 'Software Testing' with a focus on practical application of modern technologies;",
+          "Developed and maintained a full-featured educational application for testing practice based on the PERN stack and small Python microservices. Integrated with RabbitMQ for asynchronous request handling and Redis for data caching and quick access."
+        ]
+      },
+      { 
+        "date": "September 2018 - April 2023", 
+        "company": "IBS", 
+        "position": "Test Manager (Player-Coach Role)", 
+        "projects": "SBOLPRO - Corporate application for Sberbank employees (iPad, web version)",
+        "description": [
+          "Conducted testing of web and mobile applications using various test design techniques and exploratory testing (Technology stack on the project: Charles Proxy, Kibana, DevTools, Postman, RabbitMQ, Oracle DB);",
+          "Troubleshot issues during integration testing, which involved active log analysis and communication with other teams;",
+          "Managed the quality of a complex backend system with integration of over 10 internal systems;",
+          "Established the testing process from scratch: tool selection, test documentation development, test environment setup, and test planning;",
+          "Reduced regression testing time by 15% through test suite optimization."
+        ],
+        "techStack": "Charles Proxy, Kibana, DevTools, Postman, RabbitMQ, PostgreSQL"
+      },
+      { 
+        "date": "August 2015 - September 2018", 
+        "company": "Aplana", 
+        "position": "Senior Software Test Engineer / Team Lead", 
+        "projects": "Sberbank Online Internet Banking (Mobile applications: iPad, iPhone, Android, WinPhone). Gazprombank corporate application (web, Android, iPad, iPhone).",
+        "description": [
+          "Tested web and mobile applications using various test design techniques and exploratory testing (Technology stack on the project: Charles Proxy, Kibana, DevTools, Postman, RabbitMQ, Oracle DB);",
+          "Troubleshot issues during integration testing, including log analysis and cross-team communication;",
+          "Managed the quality of a complex backend system with over 10 internal systems integrated;",
+          "Established the testing process from scratch: tool selection, test documentation development, test environment setup, and test planning;",
+          "Reduced regression testing time by 15% through optimization of test suites."
+        ],
+        "techStack": "Android Studio, Xcode, Charles Proxy, Kibana, DevTools, Postman, Kafka, Oracle DB"
+      },
+      { 
+        "date": "September 2013 - August 2015", 
+        "company": "Aplana", 
+        "position": "Software Test Engineer", 
+        "projects": "Sberbank Online for Individuals - web. Sberbank Online for platforms iPad, iPhone, Android, WinPhone.",
+        "description": [
+          "Tested the full banking functionality developed on the platform;",
+          "Responsibilities included API work, testing POST/GET requests in SoapUI, log analysis, and collaboration with developers and analysts;",
+          "Developed over 300 test cases in HP ALM and implemented a requirement-traceability rule for test scenarios."
+        ],
+        "techStack": "Android Studio, Xcode, Charles Proxy, SOAP, SOAPUI, Kibana, DevTools, Jenkins, Postman, Kafka, Oracle DB"
+      }
+    ],
+    "education": [
+      { "date": "2023 - Present", "degree": "Technical College Degree", "field": "Information Systems and Programming", "institution": "Moscow City Open College" },
+      { "date": "2003 - 2008", "degree": "Bachelor's Degree", "field": "Financial Management", "institution": "State University of Management (SUM)" }
+    ],
+    "references": [
+      { "name": "Aiyana", "position": "CEO / WEBM", "text": "Habitasse venenatis commodo...", "image": "images/reference-image-1.jpg" },
+      { "name": "Braiden", "position": "CEO / Creativem", "text": "Lorem ipsum...", "image": "images/reference-image-2.jpg" },
+      { "name": "Alexander", "position": "CEO / Webnote", "text": "Consectetur adipiscing elit...", "image": "images/reference-image-3.jpg" }
+    ],
+    "socialLinks": {
+      "facebook": "",
+      "twitter": "",
+      "telegram": "https://t.me/EugSych",
+      "linkedin": "https://linkedin.com/in/evgeny-sychev-qa/",
+      "instagram": "https://instagram.com/pro.mir.it"
+    },
+    "menuItems": {
+      "aboutTitle": "About",
+      "skillsTitle": "Skills",
+      "portfolioTitle": "Portfolio",
+      "experienceTitle": "Experience",
+      "educationTitle": "Education",
+      "referencesTitle": "References",
+      "contactTitle": "Contact"
+    }
+  }
+  

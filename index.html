@@ -1,117 +1,239 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
+<html lang="en-US">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Резюме Евгения Сычёва - Senior QA Engineer">
-    <title>Евгений Сычёв - Senior QA Engineer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Резюме Евгений Сычев - Senior QA Engineer</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./css/aos.css?ver=1.1.0" rel="stylesheet">
+    <link href="./css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="./css/main.css?ver=1.1.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+  <body id="top">
     <header>
-        <div class="header-content">
-            <img src="image.jpg" alt="Евгений Сычёв" class="profile-photo">
-            <div>
-                <h1>Евгений Сычёв</h1>
-                <p>Senior QA Engineer</p>
-                <div class="contacts">
-                    <span>Email: <a href="mailto:dev.stratus@yandex.ru">dev.stratus@yandex.ru</a></span> |
-                    <span>Телефон: +7 (926) 839-76-48</span> |
-                    <span><a href="https://www.linkedin.com/in/evgeny-sychev-aa23a8180">LinkedIn</a></span>
-                </div>
+      <div class="profile-page sidebar-collapse">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+          <div class="container">
+            <div class="navbar-translate">
+              <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
             </div>
-        </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation">
+              <ul class="navbar-nav" id="nav-menu">
+                <!-- Пункты меню добавляются динамически -->
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
-
-    <div class="container">
-        <section id="summary">
-            <h2>О себе</h2>
-            <p>Опытный QA инженер с более чем 10-летним стажем в тестировании веб и мобильных приложений. Обладаю глубокими знаниями в области ручного тестирования, API тестирования и управления процессами обеспечения качества. Стремлюсь развиваться в сфере автоматизированного тестирования. Изучаю JavaScript и Selenium</p>
-        </section>
-
-        <section id="experience">
-            <h2>Опыт работы</h2>
-
-            <h3>Senior QA Engineer, Inteli Sale</h3>
-            <p>Июнь 2024 - настоящее время</p>
-            <ul>
-                <li>Выполнял ручное тестирование REST API сервиса, обеспечивая высокое качество работы системы</li>
-                <li>Создал и автоматизировал запросы в Postman для 3 API с более чем 70 endpoints, что позволило ускорить тестирование и снизить
-                    вероятность ошибок</li>
-                <li>Использовал JavaScript скрипты в Postman для автоматизации проверок и повышения эффективности тестов</li>
-                <li>Локализовал дефекты с использованием DevTools, Kibana и анализа серверных логов через командную строку, что способствовало
-                    быстрому устранению проблем</li>
-                <li>Выполнял end-to-end тестирование критически важных бизнес-процессов, включая взаимодействие с внешними
-                    интеграциями</li>
-                <li>Активно работал с инструментами Charles Proxy и мок-сервер Postman для подмены данных и тестирования разных сценариев
-                    интеграции</li>
-            </ul>
-
-            <h3>Наставник по тестированию, ИП Сычев Е. А.</h3>
-            <p>Май 2022 - настоящее время</p>
-            <ul>
-                <li>Разработчик и ведущий авторского курса "Тестировщик ПО" с фокусом на практическое применение современных технологий</li>
-                <li>Разработка и поддержка полнофункционального <a href="https://github.com/kreotiff-dev/gangster_bank.git">учебного приложения</a> для практики тестирования на базе PERN стэка и небольших микросервисов на Python. С интеграцией через RabbitMQ для асинхронной обработки запросов и Redis для
-                    кэширования и быстрого доступа к данным</li>
-            </ul>
-
-            <h3>Тест-менеджер (играющий тренер), IBS</h3>
-            <p>Сентябрь 2018 - Апрель 2023</p>
-            <ul>
-                <li>Проведение тестирования веб и мобильных приложений с применением различных техник тест-дизайна и
-                    исследовательского тестирования (Технический стек на проекте: Charles Proxy, Kibana, DevTools, Postman, RabbitMQ, Oracle DB)</li>
-                <li>Локализация проблем при проведении интеграционного тестирования, что включало в себя активную работу с логами,
-                    общение со смежными командами</li>
-                <li>Организация процесса тестирования с нуля: выбор инструментов, разработка тестовой документации, подготовка тестовой
-                    среды, планирование тестирования</li>
-                <li>Сокращение времени регрессионного тестирования на 15% за счет оптимизации тест-сьютов</li>
-            </ul>
-
-            <h3>Старший инженер по тестированию ПО / Тим-лид, Аплана</h3>
-            <p>Август 2015 - Сентябрь 2018</p>
-            <ul>
-                <li>Тестирование мобильных приложений "Сбербанк Онлайн" (мобильные приложения: iPad, iPhone, Android, WinPhone) и Корпоративное приложение Газпромбанка (веб, Android, iPad, iPhone)</li>
-                <li>Активно обучал команду работе с Postman, что увеличило среднее прохождение тест-кейсов тестировщика с 15 до 30 в день</li>
-                <li>Работа с Postman, Charles Proxy, Android Studio, Xcode, Jenkins (запуск джобов на генерацию тестовых данных и автотестов), Allure (анализ
-                    запусков автотестов)</li>
-            </ul>
-
-            <h3>Инженер-тестировщик, Аплана</h3>
-            <p>Сентябрь 2013 - Август 2015</p>
-            <ul>
-                <li>Тестирование интернет-банка "Сбербанк Онлайн"</li>
-                <li>Основные обязанности включали работу с API, тестирование POST/GET запросов в SoapUI, анализ и локализация ошибок по логам,
-                    а также взаимодействие с разработчиками и аналитиками</li>
-                <li>Анализ логов и взаимодействие с разработчиками и аналитиками</li>
-            </ul>
-        </section>
-
-        <section id="education">
-            <h2>Образование</h2>
-            <p>Информационные системы и программирование, Московский Городской Открытый Колледж (2023 – н.в.)</p>
-            <p>Финансовый менеджмент, Государственный Университет Управления (2003 – 2008)</p>
-        </section>
-
-        <section id="skills">
-            <h2>Навыки</h2>
-            <ul>
-                <li>DevTools, API тестирование (Postman, Charles Proxy)</li>
-                <li>Swagger, Kafka, RabbitMQ, SQL, Kibana, Grafana</li>
-                <li>Xcode, Android Studio, Jenkins</li>
-                <li>Git, JSON, XML</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Контакты</h2>
-            <p>Email: <a href="mailto:dev.stratus@yandex.ru">dev.stratus@yandex.ru</a></p>
-            <p>Телефон: +7 (926) 839-76-48</p>
-            <p><a href="https://www.linkedin.com/in/evgeny-sychev-aa23a8180">LinkedIn</a></p>
-        </section>
+    <div class="profile-page">
+      <div class="wrapper">
+        <div class="page-header page-header-small" filter-color="green">
+          <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-bangkok.jpg')"></div>
+          <div class="container">
+            <div class="content-center">
+              <div class="cc-profile-image"><a href="#"><img src="images/evgeniy.jpg" alt="Image"/></a></div>
+              <div class="h2 title" id="profile-name"></div>
+              <p class="category text-white" id="profile-position"></p>
+              <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" data-en="Hire Me" data-ru="Нанять меня">Hire Me</a>
+              <a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" data-en="Download CV" data-ru="Скачать резюме">Download CV</a>
+              <div class="language-switcher mt-2">
+                <button class="btn btn-language" data-language="en">EN</button>
+                <button class="btn btn-language" data-language="ru">RU</button>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <div class="container">
+              <div class="button-container" id="social-buttons-container">
+                <!-- Иконки социальных сетей добавляются динамически -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="page-content">
+      <!-- About Section -->
+      <div class="section" id="about">
+        <div class="container">
+          <div class="card" data-aos="fade-up" data-aos-offset="10">
+            <div class="row">
+              <div class="col-lg-6 col-md-12">
+                <div class="card-body">
+                  <div class="h4 mt-0 title" id="about-title" data-en="About" data-ru="Обо мне">About</div>
+                  <p id="about-text"></p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <div class="card-body">
+                  <div class="h4 mt-0 title" data-en="Basic Information" data-ru="Основная информация">Basic Information</div>
+                  <div class="row">
+                    <div class="col-sm-4"><strong class="text-uppercase" data-en="Name:" data-ru="Имя:">Name:</strong></div>
+                    <div class="col-sm-8" id="name"></div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-sm-4"><strong class="text-uppercase" data-en="Age:" data-ru="Возраст:">Age:</strong></div>
+                    <div class="col-sm-8" id="age"></div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-sm-4"><strong class="text-uppercase" data-en="Email:" data-ru="Эл. почта:">Email:</strong></div>
+                    <div class="col-sm-8" id="email"></div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-sm-4"><strong class="text-uppercase" data-en="Phone:" data-ru="Телефон:">Phone:</strong></div>
+                    <div class="col-sm-8" id="phone"></div>
+                  </div>
+                  <div class="row mt-3">
+                    <div class="col-sm-4"><strong class="text-uppercase" data-en="Location:" data-ru="Местоположение:">Location:</strong></div>
+                    <div class="col-sm-8" id="location"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Skills Section -->
+      <div class="section" id="skill">
+        <div class="container">
+          <div class="h4 text-center mb-4 title" data-en="Skills" data-ru="Навыки">Skills</div>
+          <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div class="card-body">
+              <!-- Динамически добавляемый контент будет здесь -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Experience Section -->
+      <div class="section" id="experience">
+        <div class="container cc-experience">
+          <div class="h4 text-center mb-4 title" data-en="Work Experience" data-ru="Опыт работы">Work Experience</div>
+          <div class="experience-content"></div>
+        </div>
+      </div>
 
-    <footer>
-        <p>&copy; 2024 Евгений Сычёв</p>
+      <!-- Education Section -->
+      <div class="section" id="education">
+        <div class="container cc-education">
+          <div class="h4 text-center mb-4 title" data-en="Education" data-ru="Образование">Education</div>
+          <div class="education-content"></div>
+        </div>
+      </div>
+
+      <!-- References Section -->
+      <div class="section" id="reference">
+        <div class="container cc-reference">
+          <div class="h4 mb-4 text-center title" data-en="References" data-ru="Рекомендации">References</div>
+          <div class="card" data-aos="zoom-in">
+            <div class="carousel slide" id="cc-Indicators" data-ride="carousel">
+              <ol class="carousel-indicators"></ol>
+              <div class="carousel-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="section" id="contact">
+        <div class="cc-contact-information" style="background-image: url('images/staticmap.png')">
+          <div class="container">
+            <div class="cc-contact">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="card mb-0" data-aos="zoom-in">
+                    <div class="h4 text-center title" data-en="Contact Me" data-ru="Свяжитесь со мной">Contact Me</div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <!-- Форма для отправки -->
+                          <form action="https://formspree.io/f/mgvewykr" method="POST">
+                            <div class="p pb-3" data-en="Write me a message" data-ru="Напишите мне"><strong>Write me a message</strong></div>
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
+                                  <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="fa fa-file-text"></i></span>
+                                  <input class="form-control" type="text" name="subject" placeholder="Subject" required="required"/>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                  <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row mb-3">
+                              <div class="col">
+                                <div class="form-group">
+                                  <textarea class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col">
+                                <button class="btn btn-primary" type="submit" data-en="Send" data-ru="Отправить">Send</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <p class="mb-0"><strong data-en="Location" data-ru="Местоположение">Location</strong></p>
+                          <p class="pb-2" id="contact-location"></p>
+                          <p class="mb-0"><strong data-en="Phone" data-ru="Телефон">Phone</strong></p>
+                          <p class="pb-2" id="contact-phone"></p>
+                          <p class="mb-0"><strong data-en="Email" data-ru="Эл. почта">Email</strong></p>
+                          <p id="contact-email"></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <footer class="footer">
+      <div class="container text-center">
+      </div>
+      <div class="h4 title text-center" id="footer-name"></div>
     </footer>
-</body>
+
+    <!-- Scripts -->
+    <script src="./js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
+    <script src="./js/core/popper.min.js?ver=1.1.0"></script>
+    <script src="./js/core/bootstrap.min.js?ver=1.1.0"></script>
+    <script src="./js/now-ui-kit.js?ver=1.1.0"></script>
+    <script src="./js/aos.js?ver=1.1.0"></script>
+    <script src="./data.js"></script>
+    <script src="./scripts/main.js?ver=1.1.0"></script>
+  </body>
 </html>
