@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Generation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<button onclick="generatePDF()">Download PDF</button>
+
+<script>
+// Функция загрузки данных из ru.json
+async function fetchProfileData() {
+    try {
+        const response = await fetch('./ru.json');
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Ошибка при загрузке данных:', error);
+    }
+}
+
+// Функция генерации PDF
+async function generatePDF() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    // Подключение шрифта Roboto с поддержкой кириллицы
+    const roboto = await fetch("https://cdn.jsdelivr.net/npm/jspdf-fonts@1.0.0/dist/Roboto/Roboto.js")
+                        .then(res => res.text());
+    eval(roboto);
+    doc.addFont("Roboto-Regular.ttf", "Roboto", "normal");
+    doc.setFont("Roboto");
+
+    // Загружаем данные из JSON
+    const profileData = await fetchProfileData();
+    
+    // Проверяем, если данные загружены
+    if (!profileData) {
+        alert("Ошибка загрузки данных для PDF");
+        return;
+    }
+
+    // Заголовок резюме
+    doc.setFontSize(20);
+    doc.text(profileData.name, 20, 20);
+    doc.setFontSize(16);
+    doc.text(profileData.position, 20, 30);
+
+    // Раздел "Обо мне"
+    doc.setFontSize(14);
+    doc.text("Обо мне", 20, 50);
+    doc.setFontSize(12);
+    doc.text(profileData.about, 20, 60, { maxWidth: 170 });
+
+    // Раздел "Навыки"
+    doc.setFontSize(14);
+    doc.text("Навыки", 20, 80);
+    profileData.skills.forEach((skill, index) => {
+        const y = 90 + (index * 10);
+        doc.text(`${skill.name}: ${skill.level}%`, 20, y);
+    });
+
+    // Раздел "Опыт работы"
+    doc.setFontSize(14);
+    doc.text("Опыт работы", 20, 120);
+    profileData.experience.forEach((job, index) => {
+        const y = 130 + (index * 30);
+        doc.setFontSize(12);
+        doc.text(`${job.position} - ${job.company}`, 20, y);
+        doc.text(job.date, 20, y + 10);
+        job.description.forEach((desc, i) => {
+            doc.text(`• ${desc}`, 20, y + 20 + (i * 10));
+        });
+    });
+
+    // Раздел "Образование"
+    doc.setFontSize(14);
+    doc.text("Образование", 20, 180);
+    profileData.education.forEach((edu, index) => {
+        const y = 190 + (index * 20);
+        doc.setFontSize(12);
+        doc.text(`${edu.degree}, ${edu.field}`, 20, y);
+        doc.text(edu.institution, 20, y + 10);
+    });
+
+    // Раздел "Контакты"
+    doc.setFontSize(14);
+    doc.text("Контакты", 20, 220);
+    doc.setFontSize(12);
+    doc.text(`Телефон: ${profileData.phone}`, 20, 230);
+    doc.text(`Email: ${profileData.email}`, 20, 240);
+    doc.text(`Telegram: ${profileData.socialLinks.telegram}`, 20, 250);
+    doc.text(`LinkedIn: ${profileData.socialLinks.linkedin}`, 20, 260);
+
+    // Сохранение PDF
+    doc.save("resume.pdf");
+}
+</script>
+
+</body>
+</html>

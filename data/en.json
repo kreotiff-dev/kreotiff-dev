@@ -94,6 +94,15 @@
       "linkedin": "https://linkedin.com/in/evgeny-sychev-qa/",
       "instagram": "https://instagram.com/pro.mir.it"
     },
+    "sections": {
+      "about": "About",
+      "basicInformation": "Basic Information",
+      "skills": "Skills",
+      "experience": "Experience",
+      "education": "Education",
+      "references": "References",
+      "contact": "Contact me"
+    },
     "menuItems": {
       "aboutTitle": "About",
       "skillsTitle": "Skills",

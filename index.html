@@ -51,7 +51,8 @@
               <div class="h2 title" id="profile-name"></div>
               <p class="category text-white" id="profile-position"></p>
               <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" data-en="Hire Me" data-ru="Нанять меня">Hire Me</a>
-              <a class="btn btn-primary" href="https://drive.google.com/file/d/1-4Ux5FDH-3MhV-q_rAsy4qkQG1XjxE96/view?usp=sharing" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" data-en="Download CV" data-ru="Скачать резюме">Download CV</a>
+              <a class="btn btn-primary" id="download-cv" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor" data-en="Download CV" data-ru="Скачать резюме">Download CV</a>
+
               <div class="language-switcher mt-2">
                 <button class="btn btn-language" data-language="en">EN</button>
                 <button class="btn btn-language" data-language="ru">RU</button>
@@ -234,7 +235,10 @@
     <script src="./js/core/bootstrap.min.js?ver=1.1.0"></script>
     <script src="./js/now-ui-kit.js?ver=1.1.0"></script>
     <script src="./js/aos.js?ver=1.1.0"></script>
-    <script src="./data.js"></script>
     <script src="./scripts/main.js?ver=1.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docx@7.0.0/build/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="./scripts/generate-docx.js"></script>
+
   </body>
 </html>

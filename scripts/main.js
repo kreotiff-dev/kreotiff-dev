@@ -1,10 +1,11 @@
 $(document).ready(function() {
     AOS.init();
   
-    let currentLanguage = 'en'; // Установка языка по умолчанию
+    window.currentLanguage = 'ru'; // Установка языка по умолчанию
 
+    // Функция загрузки данных профиля
     function loadProfileData(language) {
-        const filePath = language === 'ru' ? 'ru.json' : 'en.json';
+        const filePath = language === 'ru' ? 'data/ru.json' : 'data/en.json';
 
         $.getJSON(filePath, function(profileData) {
             // Заполнение личных данных
@@ -17,7 +18,7 @@ $(document).ready(function() {
             $('#location').text(profileData.location);
             $('#footer-name').text(profileData.name);
 
-            // Обновление элементов с атрибутами data-en и data-ru
+            // Обновление статического контента
             updateStaticContent(language);
 
             // Очистка существующих данных
@@ -25,19 +26,14 @@ $(document).ready(function() {
             $('#social-buttons-container').empty();
             $('.experience-content').empty();
             $('.education-content').empty();
-            $('.carousel-indicators').empty();
-            $('.carousel-inner').empty();
             $('#skill .card-body').empty();
 
             // Обновление пунктов меню
             const menuItems = [
                 { id: 'about', label: profileData.menuItems.aboutTitle, condition: profileData.about },
                 { id: 'skill', label: profileData.menuItems.skillsTitle, condition: profileData.skills },
-                { id: 'portfolio', label: profileData.menuItems.portfolioTitle, condition: profileData.portfolio },
                 { id: 'experience', label: profileData.menuItems.experienceTitle, condition: profileData.experience },
-                { id: 'education', label: profileData.menuItems.educationTitle, condition: profileData.education },
-                { id: 'reference', label: profileData.menuItems.referencesTitle, condition: profileData.references },
-                { id: 'contact', label: profileData.menuItems.contactTitle, condition: profileData.email || profileData.phone }
+                { id: 'education', label: profileData.menuItems.educationTitle, condition: profileData.education }
             ];
 
             const navMenu = $('#nav-menu');
@@ -54,8 +50,7 @@ $(document).ready(function() {
                 facebook: { icon: 'fa-facebook', url: profileData.socialLinks.facebook },
                 twitter: { icon: 'fa-twitter', url: profileData.socialLinks.twitter },
                 telegram: { icon: 'fa-telegram', url: profileData.socialLinks.telegram },
-                linkedin: { icon: 'fa-linkedin', url: profileData.socialLinks.linkedin },
-                instagram: { icon: 'fa-instagram', url: profileData.socialLinks.instagram }
+                linkedin: { icon: 'fa-linkedin', url: profileData.socialLinks.linkedin }
             };
 
             const socialButtonsContainer = $('#social-buttons-container');
@@ -81,7 +76,8 @@ $(document).ready(function() {
                     }
                     $('.skill-row').last().append(`
                         <div class="col-md-4">
-                            <div class="progress-container progress-primary"><span class="progress-badge">${skill.name}</span>
+                            <div class="progress-container progress-primary">
+                                <span class="progress-badge">${skill.name}</span>
                                 <div class="progress">
                                     <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="${skill.level}" aria-valuemin="0" aria-valuemax="100" style="width: ${skill.level}%;"></div>
                                     <span class="progress-value">${skill.level}%</span>
@@ -192,11 +188,12 @@ $(document).ready(function() {
         });
     }
 
+    // Смена языка
     $('.btn-language').click(function() {
-        currentLanguage = $(this).data('language');
-        loadProfileData(currentLanguage);
+        window.currentLanguage = $(this).data('language');
+        loadProfileData(window.currentLanguage);
     });
 
     // Загрузка данных по умолчанию
-    loadProfileData(currentLanguage);
+    loadProfileData(window.currentLanguage);
 });
