@@ -10,8 +10,8 @@
       { "name": "Мобильное тестирование", "level": 70 },
       { "name": "Интеграционное", "level": 80 },
       { "name": "Charles Proxy", "level": 60 },
-      { "name": "JavaScript", "level": 15 },
-      { "name": "Selenium", "level": 15 }
+      { "name": "TypeScript", "level": 40 },
+      { "name": "Playwright", "level": 30 }
     ],
     "experience": [
       { 
