@@ -15,6 +15,21 @@
       { "name": "Selenium", "level": 15 }
     ],
     "experience": [
+        {
+          "date": "October 2024 – Present",
+          "company": "TOO Teez",
+          "position": "Senior QA Engineer",
+          "projects": "WMS, Teez POST, Pickup Points (PVZ)",
+          "description": [
+            "Organized the QA process within the team, implemented the testing pyramid model and Quality Gates;",
+            "Migrated API collections to Postman and automated key scenarios, reducing test data preparation time by 80%;",
+            "Automated end-to-end tests using TypeScript + Playwright, increasing regression stability;",
+            "Built a web application for test data generation (Node.js + Express + Vue), reducing preparation time from 20 minutes to 1 minute;",
+            "Managed release scope and deployments in Jira;",
+            "Actively participated in Agile ceremonies (grooming, planning, retrospectives)."
+          ],
+          "techStack": "Postman, Kafka, TypeScript, Playwright, Jira, Qase"
+        },
       { 
         "date": "June 2024 - Present", 
         "company": "Inteli Sale", 
