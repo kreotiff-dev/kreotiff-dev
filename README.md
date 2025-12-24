@@ -20,11 +20,11 @@ Senior QA Engineer
 
 Так же поддерживаю проекты для практики тестирования в помощь начинающим тестировщикам: 
 
-https://dev-lms.testerhub.ru/
+* https://dev-lms.testerhub.ru/
 
-https://sklad.testerhub.ru/api-docs/swagger/
+* https://sklad.testerhub.ru/api-docs/swagger/
 
-https://t.me/testerschool - телеграм поодержки площадок
+* https://t.me/testerschool - телеграм поодержки площадок
 
 * 🌍  Worldwide
 * ✉️  You can contact me at [dev.stratus@gmail.com](mailto:dev.stratus@gmail.com)
