@@ -10,6 +10,8 @@ Senior QA Engineer
 
 За эти годы побывал в разных ролях — от обычного QA до координации команд и менторства. Нравится, когда можно и руками потестить, и автоматизацию подкрутить, и процесс улучшить — в общем, делать так, чтобы продукт работал как надо.
 
+Подробнее с моим опытом работы можно ознакомиться [здесь](https://kreotiff-dev.github.io/kreotiff-dev/)
+
 В свободное время веду [блог о тестировании](https://www.instagram.com/pro.mir.it/) и [Telegram-канал](https://t.me/pro_mir_it), помогаю расти начинающим QA.
 
 Автор платформы для практики тестирования [TesterHub](https://testerhub.ru/)
@@ -25,9 +27,12 @@ Senior QA Engineer
 * https://sklad.testerhub.ru/api-docs/swagger/
 
 * https://t.me/testerschool - телеграм поодержки площадок
+  
 
 🌍  Worldwide
+
 ✉️  You can contact me at [dev.stratus@gmail.com](mailto:dev.stratus@gmail.com)
+
 My Telegram [@EugSych](https://t.me/EugSych)
 
 <p align="left">
