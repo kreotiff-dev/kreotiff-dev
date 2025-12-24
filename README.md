@@ -10,9 +10,16 @@ Senior QA Engineer
 
 За эти годы побывал в разных ролях — от обычного QA до координации команд и менторства. Нравится, когда можно и руками потестить, и автоматизацию подкрутить, и процесс улучшить — в общем, делать так, чтобы продукт работал как надо.
 
-В свободное время веду блог о тестировании и Telegram-канал, помогаю расти начинающим QA.
+В свободное время веду [блог о тестировании](https://www.instagram.com/pro.mir.it/) и [Telegram-канал](https://t.me/pro_mir_it), помогаю расти начинающим QA.
+Автор платформы для практики тестирования [TesterHub](https://testerhub.ru/)
+Автор курса [Postman с нуля до профи](https://qa-study.ru/postman)
+Автор LMS платформы - https://lms.testerhub.ru
+Так же поддерживаю проекты для практики тестирования в помощь начинающим тестировщикам: 
+https://dev-lms.testerhub.ru/
+https://sklad.testerhub.ru/api-docs/swagger/
+https://t.me/testerschool - телеграм поодержки площадок
 
-* 🌍  I'm based in Москва
+* 🌍  Worldwide
 * ✉️  You can contact me at [dev.stratus@gmail.com](mailto:dev.stratus@gmail.com)
 * My Telegram [@EugSych](https://t.me/EugSych)
 
