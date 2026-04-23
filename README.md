@@ -14,9 +14,9 @@ Senior QA Engineer
 
 В свободное время веду [блог о тестировании](https://www.instagram.com/pro.mir.it/) и [Telegram-канал](https://t.me/pro_mir_it), помогаю расти начинающим QA.
 
-Автор платформы для практики тестирования [TesterHub](https://testerhub.ru/)
+Автор платформы для практики тестирования [TesterHub](https://testerhub.ru/) (на реконструкции)
 
-Автор курса [Postman с нуля до профи](https://qa-study.ru/postman)
+Автор курса [Postman с нуля до профи](https://lms.testerhub.ru/catalog/course/cmc8z3srk0000nrtedzasde6w)
 
 Создатель:
 LMS платформы: https://lms.testerhub.ru
