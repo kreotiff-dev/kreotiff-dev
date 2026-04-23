@@ -18,14 +18,14 @@ Senior QA Engineer
 
 Автор курса [Postman с нуля до профи](https://qa-study.ru/postman)
 
-Автор LMS платформы - https://lms.testerhub.ru
+Создатель:
+LMS платформы: https://lms.testerhub.ru
+Сервиса автопостинга: https://stage.easyposty.com/
 
 Так же поддерживаю проекты для практики тестирования в помощь начинающим тестировщикам: 
 
 * https://dev-lms.testerhub.ru/
-
 * https://sklad.testerhub.ru/api-docs/swagger/
-
 * https://t.me/testerschool - телеграм поодержки площадок
   
 
